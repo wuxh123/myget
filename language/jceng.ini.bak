@@ -1,0 +1,848 @@
+;localization:
+;Copy jceng.ini to jcxxx.ini(xxx is taking the 2-letter language
+;abbreviation from the ISO Standard 639 and adding a third letter,
+;as appropriate, to indicate the sublanguage).
+
+;This session must use english
+[Info]
+Language=English
+Translator=Amaze Soft(support@amazesoft.com) Updated by GodSponge
+Version=0.95
+
+[Menu]
+57600P=&File
+57600=&New Database
+57601=&Open Database...
+57603=&Save Database
+57604=Save &As...
+32821=Import Previous File...
+32851=Import Previous Batch File...
+32808=Export Information...
+32852=Recently Downloaded Files
+57665=E&xit
+
+32780p=&Category
+32780=New Category...
+32782=Move to...
+32783=Delete
+32781=Properties...
+32788=Open
+
+57637p=&Edit
+57637=&Paste URL
+32794=Select &All
+32795=&Invert Selection
+57636=Find...
+32817=Find Next
+57634=Copy
+
+32772p=&View
+32772=Detail
+32787=Drop Zone
+32797p=ToolBar
+32797=Show Text
+32798=Buttons...
+32792=Columns...
+
+32779p=&Jobs
+32779=New Download...
+32819=Add batch download...
+32773=Start
+32774=Pause
+32802=Pause All
+32809=Schedule
+32793=Move To...
+32775=Delete
+32822=Rename...
+32776=Properties...
+32799=Move Up
+32800=Move Down
+32813=Check for update
+32814=Download Again
+32777=Open downloaded file
+32778=Open destination directory
+32816=Comment...
+32820=Virus Scan
+32849=Start All
+32850=Browse Referer
+32803=Copy URL to clipboard
+32807=Delete All
+
+32848p=&Tools
+32848=Connect/Disconnect
+32805=Shut Down When Done
+32804=Hang Up When Done
+32806=Redial if Disconnected
+32812=Obey Speed Limit
+32818=Save as default
+32791=Default Download Properties...
+32786=Options...
+
+32823p=&Help
+32823=User Manual
+32846=Remove Banner...
+57664=&About FlashGet
+32796=Go to FlashGet Home Page ->
+
+32790=Open/Hide FlashGet
+32801=Monitor ClipBoard
+
+32824=Save to file...
+
+32825=Add to job list
+32826=Open in browser
+32853=Select...
+32843p=Sort by
+32843=Type
+32844=Title
+32845=URL
+32854=Deselect All
+
+32830p=Encoding
+32830=Default
+32831=Baltic
+32832=Chinese(BIG5)
+32833=Chinese(GB)
+32834=Easteurope
+32835=Greek
+32836=Russian
+32837=Japanese
+32838=Turkish
+32839=Korean
+32840=Hebrew
+32841=Arabic
+32842=Thai
+32855=Disable Browser Monitoring
+32857=Export...
+32858=Check for a new version
+
+32859=Import &list...
+32860=Export list...
+32861=Process Web Page File...
+
+32862=&Start
+32863=S&top
+32864=&Restart
+
+32865=Import Broken Downloads...
+
+32866=Site Explorer
+32887=Fix Corrupted Zip File.
+32881p=&File
+32881=&New Window
+32882=&Download...
+32794p=&Edit
+32886=Clear L&og
+59409p=&View
+59409=Large Icon
+59408=Small Icon
+59410=List
+59411=Detail
+32872p=Arrange Icon
+32872=By Name
+32873=By Type
+32874=By Title
+32875=By Size
+32876=By URL
+32877=By Date
+32878=By Referer
+32879=&Stop
+32880=&Refresh
+32884=Site Explorer Options...
+
+32822p=Rename
+32888=Comment As Filename
+32889=Merge Database...
+32891=Filter...
+
+[Dialog_Common]
+1=OK
+2=Cancel
+6=Yes
+7=No
+
+[About_Dlg]
+Title=About FlashGet
+
+[Download_Dlg]
+Title=Download
+1197=&Referrer:
+1198=&Category:
+1199=S&ave to:
+1200=R&ename:
+1201=Spli&t file into
+1202=part(s) simultaneous download
+1009=Lo&gin to Server:
+1203=Proxy
+1206=User&name:
+1207=&Password:
+1208=C&omment:
+1209=Start
+1132=&Manual
+1133=&Immediately
+1134=&Schedule
+1177=Notice: FlashGet manages downloaded files differently than other download software. If you want to change the default download directory, please change every category's directory's property. It's recommended you read the FAQ or the User Guide. 
+1180=Save As Default
+1249=Find alternate URLs through the mirror list file or Ftp Search
+
+[Category_Dlg]
+1197=&Category Name:
+1198=&Default Directory:
+1199=Sub-Category:
+1200=TotalFiles:
+1201=Downloaded Files:
+1202=Downloaded Size:
+
+[NewFolder_Dlg]
+Title=New Folder
+1197=Current Folder
+1198=&New Folder Name
+
+[SelFolder_Dlg]
+Title=Folder Selection
+1197=&Select Folder
+1198=&Folders/Drivers
+1046=&New Folder
+
+[Gen_PPG]
+Title=General
+1055=Start main window minimized
+1056=Prompt when a file is dropped on the DropZone
+1058=Still download from non-resumable sites
+1059=if error occurs stop download
+1062=Auto save listed file every
+1197=minutes
+1100=Get File Date and Time From Server
+1120=Start downloading on startup
+1123=Use ""jc!"" as file extension til download is finished
+1124=Display file size in bytes
+1179=Auto backup download database every day
+1255=Write individual *.log file for each downloaded file
+1198=Min Segment Size:
+1199=K
+
+[Proxy_PPG]
+Title=Proxy
+1155=Add
+1156=Edit
+1157=Delete
+1197=RollBack:
+1198=Bytes
+1210=All Jobs Use Default Proxy
+
+[Conn_PPG]
+Title=Connection
+1197=Time out
+1198=Connection
+1199=Data:
+1200=Limit
+1201=Max simultaneous jobs:
+1202=Number of retries:
+1141=Always Retry
+1203=Download Speed Limit
+1204=Speed
+1205=k/s
+1135=Always obey speed limit
+1206=Retry Delay
+1271=Stop download when over 99 times but not received any file data
+
+[Pro_PPG]
+Title=Protocol
+1197=Ftp
+1198=Use ASCII mode for files of type:
+1199=HTTP
+1200=User-Agent:
+1201=User define:
+1182=Enable Cookies
+1202=EMail Address for Anonymous Ftp Logins:
+
+[Mon_PPG]
+Title=Monitor
+1197=Clipboard
+1066=Monitor
+1065=Confirmation
+1198=Browser Clicks
+1124=Netscape Navigator
+1125=Internet Explorer
+1126=Confirmation
+1127=Use ALT key
+1199=Monitor these types:
+1218=Open cancelled URLs in browser
+1008=Fill comment with clipboard contents
+1229=Method1
+1230=Method2
+1095=Default Manager
+1272=Wild Match
+
+[Color_PPG]
+Title=Graph/Log
+1197=Graph
+1198=&Scale
+1199=K/Sec
+1200=&ForegroundColor:
+1201=&BackgroundColor:
+1202=Log Window
+1148=S&etting Background color
+1068=State Line
+1069=Error Line
+1070=Command Line
+1071=Server Line
+1075=&Reset
+1217=Display Graph At DropZone
+1203=Block Size:
+1204=K
+1281=Transparent
+
+[File_PPG]
+Title=File Manager
+1197=Move downloaded Item(s) to other category
+1076=Do &No move
+1077=&Prompt
+1078=&Move
+1198=If destination file exists
+1128=Overwrite
+1129=Auto Rename
+1130=Stop
+1153=Use virus scanner to scan the downloaded file(s)
+1003=&Browser
+1199=&Args
+1200=File types to send to virus scanner
+1253=Move some files to portable storage devices:
+1273=Open(View) files when finished downloading
+1201=File types:
+
+[Dial_PPG]
+Title=Dial-Up Networking
+1082=Hang up when done
+1197=Dial-Up Settings
+1198=Connection:
+1199=Username:
+1200=Password:
+1081=Redial if disconnected
+1201=Retry failed conection
+1202=times
+1203=Between retry wait
+1204=sec
+1205=Connection Interrupted Window Title:
+
+[Snd_PPG]
+Title=Sounds
+1095=&Enable Sounds
+1197=&Sounds
+1094=&Play
+1096=&None
+1003=&Browse
+1219=P&opup messagebox when download completes
+
+[Other_PPG]
+Title=Other
+1197=When double-clicking on an item1
+1198=Download Job
+1199=Failed Download job
+1200=Successful download job
+1099=Start/Stop
+1100=Edit
+1101=Comment
+1102=View
+1103=Edit
+1104=Comment
+1105=Open Folder
+1106=Edit
+1107=Comment
+1260=Display Sub-Categories in alphabetical order(Need to restart FlashGet)
+1201=Setting:
+
+[Schedule_PPG]
+Title=Schedule
+1197=Start downloading file at
+1110=Monday
+1111=Tuesday
+1112=Wednesday
+1113=Thursday
+1114=Friday
+1115=Saturday
+1116=Sunday
+1082=Stop downloading files at
+
+[Column_Dlg]
+Title=Column
+1197=Check the columns that you would like visible in this view. Use the Move Up and Move Down buttons to reorder the columns however you like.
+1198=The selected column shoule be
+1199=pixels wide.
+1047=Show
+1048=Move Up
+1049=Move Down
+1050=Default
+1051=Hide
+
+[DupURL_Dlg]
+Title=Duplicate URL
+1=Check for update
+3=Download Again
+1197=Already in list
+
+[Find_Dlg]
+Title=Find
+1197=&Find What:
+1198=Search fields
+1014=&NAME
+1001=&URL
+1008=&Comment
+
+[AddBatch_DLG]
+Title=Add batch job
+1197=&From:
+1198=&To:
+1199=Wildcard bytes:
+1200=F&rom
+1201=Note: Is Sase Sensitive
+1202=Sample:
+
+[AddFile_Dlg]
+Title=Add Previously Downloaded File
+1197=File:
+1198=Date:
+1199=Size:
+1200=&Category:
+1201=Directory:
+1152=&Move File
+1203=C&omment:
+1204=&Referrer:
+
+[ProxyInfo_Dlg]
+Title=Proxy settings
+1197=&Title:
+1198=&Server:
+1199=P&ort:
+1200=Type
+1161=&Direct connection
+1162=&HTTP
+1163=&FTP <User user@host:port>
+1164=FTP <User user@host port>
+1165=FTP <Open host>
+1166=FTP <Site host>
+1167=FTP <Site user@host>
+1168=SOCKS5
+1169=&No-Cache
+1061=PASV &Mode
+1170=&Authenticate
+1201=&User:
+1202=&Password:
+
+
+[Reg_Dlg]
+Title=Register FlashGet
+1197=FlashGet is free, it has no time limitations or crippled features. It is not essential to register, but it removes the advertisement banner.
+1001=Click here to get you registration code
+1198=User Name:
+1199=Registration Code:
+
+[SelURL_Dlg]
+Title=Select URL
+1197=Notice: Only selected URL(s) will be added to job list. Right click mouse to customize.
+1245=Select &All
+1246=&Unselect All
+1247=&Select
+1248=&Mark HighLight
+
+[Delete_Dlg]
+Title=Delete
+1197=Are you sure you wish to permanently delete these item(s)?
+1178=Delete downloaded file
+
+[Dialing_Dlg]
+Title=Dialing
+
+[Export_Dlg]
+Title=Export Downloaded information
+1197=Export Type
+1183=&HTML
+1188=Individual &Log
+1198=&Category:
+1199=&Style:
+1184=&Include Sub-Category
+1186=&View Export HTML file
+1=&Export
+
+[AddBatchFile_Dlg]
+Title=Add Previously Downloaded Batch File
+1197=&Directory:
+1184=&Include Sub-Directory
+1198=&Category:
+1185=&Auto Create Category
+
+[Recent_Dlg]
+Title=Recently Downloaded Files
+1=Goto
+1197=&Display Num:
+
+[SelLinks_Dlg]
+Title=Select links
+1197=&Host Name:
+1198=&File Extention:
+1213=All
+1214=All
+
+[AltUrls_Dlg]
+Title=Setup Alternate URLs
+1155=&Add
+1157=&Delete
+
+[Mirrors_PPG]
+Title=Mirrors
+1236=&Enable Mirrors
+1237=&Automatically search for mirror sites when starting download
+1239=Automatically select &best mirror sites for download
+1197=&Min. size for automatic mirror sites search-
+1199=Max &Hit:
+1202=Current Geographic Location:
+1200=Country &Code:
+1201=Country &List:
+1244=A&utomatically calculate and add alternate URLs
+1203=&Server:
+
+[BaseURL_Dlg]
+Title=Enter URL
+1197=Enter the URL where the page was located. Leaving it blank is OK, but any relative items may not be parsed correctly.
+
+[Login_PPG]
+Title=Login
+1155=&Add
+1156=&Edit
+1157=&Delete
+
+[Login_Dlg]
+Title=Login
+1197=&URL Mask:
+1198=User&name:
+1199=&Password:
+
+[ExpGen_PPG]
+1197=HTML "Directory" file types:
+
+[ExpDlgBar]
+1009=Login
+1197=Address:
+1198=User:
+1199=Pass:
+
+[Merge_Dlg]
+Title=Merge download database
+
+[Filter_Dlg]
+Title=Filter
+1197=Show Only...
+1198=Show all expect...
+1199=File Types:
+
+[Confirm_Dlg]
+1278=Do not ask me again
+
+
+[String]
+57345=Ready
+57600=Create a new download file database
+57601=Open an existing download file database
+57602=Close the active document
+57603=Save the active download file database
+57604=Save the active download file database with a new name
+57664=Display program information, version number and copyright
+57665=Quit the application; and prompts to save download file database
+57616=Open this download file database
+57634=Copy the selection and put it on the Clipboard
+57636=Find the specified item
+
+32772=Show or hide the detailed information
+32773=Start transferring selected file(s)
+32774=Pause download
+32775=Delete selected items
+32776=Edit job properties
+32777=Open downloaded file using its default association
+32778=Open files' destination directory.
+32779=Add new download
+32780=Create a new category.
+32781=Category Properties
+32782=Move to another category.
+32783=Delete a Category.
+32786=Change options
+32787=Show/Hide drop zone window.
+32788=Open the selected Category.
+32790=Open or hide FlashGet main window
+32791=Edit default download properties
+32792=Configures the columns displayed in the list.
+32793=Move selected item to other Category.
+32794=Select all items.
+32795=Reverse which items are selected and which are not.
+32796=Go to the FlashGet home page
+32797=Show toolbar button text
+32798=Show button selection dialog.
+32799=Move the selected item(s) up
+
+32800=Move the selected item(s) down
+32801=Monitor clipboard.
+32802=Pause all downloads.
+32803=Copy select item to clipboard.
+32804=Hang Up When Done
+32805=Shut Down When Done
+32806=Redial if Disconnected
+32807=Delete all items in current folder.
+32808=Export downloaded file information.
+32809=Schedule downloading time
+32812=Obey Speed Limit
+32813=Check selected file(s) for update.
+32814=Download selected file(s) again.
+32816=Change download file comment.
+32817=Find other match item.
+32818=Save current settings as default settings.
+32819=Add batch download.
+32820=Scan selected file(s) for viruses.
+32821=Add previously downloaded file to current download file database.
+32822=Rename download file name.
+32823=Online user manual
+32824=Save log to a file.
+32825=Add selected URL to download list.
+32826=Open selected URL in browser.
+32846=Register to remove the banner
+
+32848=Connect/Disconnect from phone line.
+32849=Start all downloads.
+32850=Browser Referrer
+32851=Add previous batch downloaded files to current download file database.
+32852=Display Recently Downloaded Files
+
+61204=Download
+61205=Upload
+61206=Downloaded
+61207=Uploaded
+61208=,,Name,Size,Completed,Percent,Elapsed,Left,Speed,Num,Retry,URL,Comment,Create Time,Complete Time
+61209=Chart/Log
+61210=Connecting %1 [IP=%2]
+61211=Connected.
+61212=Cannot resolve host name
+61213=Connecting %1
+61214=Closed.
+61215=User Cancel at %1.
+
+61216=Create or Open file error.
+61217=Invalid input.
+61218=Time out.
+61219=Wait %d second for retry
+61220=Maximum error. This part halted.
+61221=Start Receiving Data!
+61222=Create new Category
+61223=Select Category
+61224=Can't move or delete special Category!
+61225=Delete Category and all it's sub-categories?
+61226=Can't move Category!
+61227=Options
+61229=Add new download
+61230=Properties
+61231=Deleted
+
+61232=Select the category in which the new category should be created:
+61233=Move
+61234=Move the item(s) to the selected Category:
+61235=Completed move to the selected Category:
+61236=Default download propeties
+61238=Status,Resume,Name,Size,Completed,Percent,elapsed,Left,Speed,Num,Retry,URL,Comment,Create Time,Complete Time
+61239=Connecting proxy %1
+61241=Error occured!
+61242=Connecting proxy %1 [IP=%2]
+61243=Socket connected, Waiting for welcome message.
+61244=Login Successful
+61245=This site can resume broken downloads.
+61246=This site can't resume broken downloads.
+61247=Received %1 bytes OK.
+
+61248=Error Connected to %s , Port %d.
+61249=File Not Found.
+61250=Site doesn't support resume, download stopped
+61251=URL now in download list.
+61252=File size unknown, can't start other parts.
+61254=Start
+61255=Pause
+61256=New
+61257=Delete
+61258=Open
+61259=Directory
+61260=Default
+61261=About
+61262=HomePage
+61263=Up
+61264=Down
+61266=More colors...
+61268=Also move downloaded file?
+61269=FlashGet - %1 file(s) in queue %2 file(s) downloading
+61270=FlashGet - %1 file(s) in queue
+61271=None,FlashGet,Internet Explore 3.x,Internet Explore 4.x,Internet Explore 5.x,Netsacpe Navigator 3.x,Netscape Navigator 4.x,User Define
+
+61272=Write to file error!
+61273=Reestablish Connection
+61274=(FlashGet Should Never Dial)
+61275=Start Dial
+61276=Wait dial.
+61277=Dial-up Error: %1
+61278=Event,Sound File
+61279=Add new job,Download success,Download failure,All Down
+
+61280=Sound Files (*.WAV)
+61281=Redirect to %1
+61282=Redirect from %1\n
+61283=HTML File (*.htm; *.html)|*.htm;*.html|All Files (*.*)|*.*||
+61284=Export to HTML
+61285=Name,URL,Size,Date,Complete Time,Save as,Comment
+61286=Program (*.exe)|*.exe||
+61287=Schedule stop!
+61288=Site does not support resume. This part halted.
+61289=ShutDown
+61290=FlashGet will shut down Windows in %d seconds.
+61291=HangUp
+
+61292=FlashGet will hangup in %d seconds.
+61293=Destination file exists, auto rename
+61294=Destination file exists, download halted.
+61295=Are you sure you want to delete downloading job(s)?
+
+61296=Software,Game,Driver,Mp3
+61297=The file on server is the same as the file on the local machine.
+61298=The file on the server is newer, you should download it again.
+61299=Didn't receive any data within 99 tries, should stop.
+61300=Item not found!
+61301=Date,Information
+61302=Parameter,Value
+61303=Info
+61304=URL,Comment,Referer,Resume,Local File,File Date,File Size,Completed,Total Time,Average Speed,Create Time,Complete Time
+61305=Add previously downloaded file
+61306=Rename
+61307=Direct connection
+61308=Http Default,Ftp Default,Title
+61309=Links
+61310=Title,URL
+61311=Some jobs are running, Exit anyway?
+
+61312=Use the same setting for other files?
+61313=Error. Download again later.
+61314=Thank you for registering FlashGet. Please restart the program. If you've typed your registration data correctly, the banners will be removed.
+61315=Connected.
+61316=Disconnected
+61317=Opening the port...
+61318=Port has been opened successfully
+61319=Connecting to the device...
+61320=The device has connected successfully.
+61321=All devices in the device chain have been successfully connected.
+61322=Verifying the user name and password...
+61323=An authentication event has occurred.
+61324=Requested another validation attempt with a new user.
+61325=Server has requested a callback number.
+61326=The client has requested to change the password
+61327=Registering your computer on the network...
+
+61328=The link-speed calculation phase is starting...
+61329=An authentication request is being acknowledged.
+61330=Reauthentication (after callback) is starting.
+61331=The client has successfully completed authentication.
+61332=The line is about to disconnect for callback.
+61333=Delaying to give the modem time to reset for callback.
+61334=Waiting for an incoming call from server.
+61335=Projection result information is available.
+61336=User authentication is being initiated or retried.
+61337=Client has been called back and is about to resume authentication.
+61338=Logging on to the network...
+61339=Subentry has been connected
+61340=Subentry has been disconnected
+61341=Terminal state supported by RASPHONE.EXE.
+61342=Retry authentication state supported by RASPHONE.EXE.
+61343=Callback state supported by RASPHONE.EXE.
+
+61344=Change password state supported by RASPHONE.EXE.
+61345=Connect/Disconnect
+61346=File size already changed!
+61347=Find
+61348=Find Next
+61349=File is missing, browse for it?
+61350=Browse missing file
+61351=Really Hangup?
+61352=Get previously downloaded files directory
+61353=Total add %d files.
+61354=Comment
+61355=Doesn't include valid URL(s)!
+57637=Insert Clipboard contents
+32855=Disable Monitor Browser Click.
+32857=Export file and download information
+61356=Select export folder:
+32858=Check for a new version of FlashGet
+61357=A newer version(%1) of FlashGet was found. View More Information?
+61358=You already have the latest version of FlashGet.
+61359=Add Alternate URL
+61360=File size is different, can't download from this site.
+61361=No Response
+61362=Start Ping.
+61363=Ping Done.
+61364=Start ftp search
+61365=Ftp search done. Total found %d mirror sites.
+61366=Download with FlashGet
+61367=Download All with FlashGet
+61368=URL list files(*.lst)|*.lst|All Files (*.*)|*.*||
+32859=Import URL's list.
+32860=Export URL's list.
+32861=Process Web Page File
+61369=File(s)
+61370=Byte
+61371=URL Mask,Username,Password
+32865=Recover browser's broken downloads
+
+212=FlashGet Site Explorer
+32866=Site Explorer
+32887=Fix Corrupted Zip File.
+32881=Open new tool window.
+32882=Download Selected Item(s).
+32885=Change listview display style.
+32886=Clear the log window.
+59409=Displays items by using large icons.
+59408=Display items by using small icons.
+59410=Displays items in a list.
+59411=Display information about each item in window.
+32872=Sort items by Name.
+32873=Sort items by Type
+32874=Sort items by Title
+32875=Sort items by Size
+32876=Sort items by URL
+32877=Sort items by Date
+32878=Sort items by Referer
+32879=Stop download or explore.
+32880=Refresh current item.
+32884=Change Site Explorer options
+61373=Please put ""http://"" or ""ftp"" before the address to tell what type of connection to use.
+61374=Name,Type,Title,URL,Size,Modified,From
+61375=You are using a HTTP Proxy for FTP address. This may not work well (if at all) for browsing an FTP site. If one is available, it is recommended you use an FTP Proxy server.
+61376=This will close FlashGet and all other open FlashGet windows. Continue?
+61377=No errors detected.
+61378=It does not appear to be a valid archive.
+61379=CRC Error! Need redownload %1(%2) Bytes, Continue?
+61380=Downloading again will delete current downloaded file(s),Continue?
+61381=The file '%1',already exists in your list.\n'%2'\n Add it as alternate(Mirror) URL?
+61382=Selecting OK will reset and enable all FlashGet integration with your browser for automatic downloading. Sometimes other programs and utilities will interfere with the integration process, even going to the lengths of changing your user settings in order to keep their hold on your system. Some of these programs are installed without your knowledge or consent and are carried as unacknowledged installations delivered with other well-known packages. Often relying on being loaded at system startup and constantly running, they use up unnecessary processor time on your computer all in an attempt to control your machine.\nIf you experience browser integration problems, run this utility to attempt to restore FlashGet's original functionality. If this fails, locate the conflicting installation and remove it completely. If this still doesn't alleviate the problem, Please re-install FlashGet.\nYou need shut down and restart your computer after reinstallation.
+
+61383=Enable FlashGet Integration With Browser
+32888=Comment As Filename
+32889=Merge download database
+32891=filtering (hiding) files from the list.
+
+61384=Main Window
+61385=Hidde window when minimized
+61386=Minimizes main windows on click X
+61387=Close FlashGet when done
+61388=FlashGet will close in %d seconds.
+61389=Confirmations
+61390=On program exit when have files downloading
+61391=On program exit when tools window open
+61392=Add URL through menu "Download using FlashGet"
+61393=Settings confirm When add batch URLs
+61394=Speed
+61395=HangUp
+61396=ShutDown
+61397=Exit
+61398=Site Explorer
+61399=Default Marked Types
+
+;End(Don't remove this line)

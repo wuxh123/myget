@@ -1,0 +1,1773 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MyGet.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  DISCARDABLE     "res\\bmp159.bmp"
+IDB_MAINFRAME_ENABLE    BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_MAINFRAME_DISABLE   BITMAP  DISCARDABLE     "res\\bmp160.bmp"
+IDB_INDEX_ITEM_ICON     BITMAP  FIXED IMPURE    "res\\bmp00001.bmp"
+IDB_LIST_ITEM_ICON      BITMAP  FIXED IMPURE    "res\\bmp145.bmp"
+IDB_BLOCK_STATUS_BMP    BITMAP  FIXED IMPURE    "res\\bmp133.bmp"
+IDB_CONTENT_ITEM_ICON   BITMAP  FIXED IMPURE    "res\\content_.bmp"
+199                     BITMAP  FIXED IMPURE    "res\\bmp199.bmp"
+200                     BITMAP  FIXED IMPURE    "res\\bmp200.bmp"
+IDB_CHOICE_TYPE_BMP     BITMAP  FIXED IMPURE    "res\\choice_t.bmp"
+IDB_CHECK_BOX_BMP       BITMAP  FIXED IMPURE    "res\\check_bo.bmp"
+IDB_OTHERS              BITMAP  FIXED IMPURE    "res\\others.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  22, 20
+BEGIN
+    BUTTON      IDM_JOB_START
+    BUTTON      IDM_JOB_PAUSE
+    BUTTON      IDM_JOB_NEW_DOWNLOAD
+    BUTTON      IDM_JOB_DELETE
+    BUTTON      IDM_JOB_PROPERTIES
+    BUTTON      IDM_JOB_MOVE_UP
+    BUTTON      IDM_JOB_MOVE_DOWN
+    BUTTON      IDM_JOB_OPEN_DOWNLOADED_FILE
+    BUTTON      IDM_JOB_OPEN_DEST_DIR
+    BUTTON      ID_BUTTON32877
+    BUTTON      ID_BUTTON32878
+    BUTTON      ID_BUTTON32879
+    BUTTON      IDM_TOOLS_DEFAULT_DOWNLOAD_PROPERTIES
+    BUTTON      IDM_TOOLS_OPTIONS
+    BUTTON      ID_BUTTON32882
+    BUTTON      ID_BUTTON32883
+    BUTTON      ID_BUTTON32884
+    BUTTON      ID_BUTTON32885
+    BUTTON      ID_BUTTON32886
+    BUTTON      ID_BUTTON32887
+    BUTTON      ID_BUTTON32888
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\idr_main.ico"
+IDI_TRAY1               ICON    DISCARDABLE     "res\\tray1.ico"
+IDI_TRAY2               ICON    DISCARDABLE     "res\\tray2.ico"
+IDI_TRAY3               ICON    DISCARDABLE     "res\\tray3.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU FIXED IMPURE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Database\tCtrl+N",       57600
+        MENUITEM "&Open Database...\tCtrl+O",   ID_FILE_OPEN
+        MENUITEM "&Merge Database",             IDM_FILE_MERGE_DB
+        MENUITEM "&Save Database\tCtrl+S",      IDM_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "Import Previous File...",     32821
+        MENUITEM "Import Previous Batch File...", 32851
+        MENUITEM "Export Information...",       32808
+        MENUITEM "Export...",                   32857
+        MENUITEM SEPARATOR
+        MENUITEM "Import Broken Downloads...",  32865
+        MENUITEM SEPARATOR
+        MENUITEM "Import &list...",             32859
+        MENUITEM "Export list...",              32860
+        MENUITEM "Process Web Page File...",    32861
+        MENUITEM SEPARATOR
+        MENUITEM "&Recently Downloaded File...", 32852
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 57616, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Category"
+    BEGIN
+        MENUITEM "New Category...",             IDM_CATEGORY_NEW
+        MENUITEM "Move to...",                  IDM_CATEGORY_MOVE_TO
+        MENUITEM "Delete",                      IDM_CATEGORY_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Properties...",               IDM_CATEGORY_PROP
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Paste URL\tCtrl+V",          57637
+        MENUITEM "Select &All\tCtrl+A",         32794
+        MENUITEM "&Invert Selection",           32795
+        MENUITEM SEPARATOR
+        MENUITEM "Find...\tCtrl+F",             57636
+        MENUITEM "Find Next\tF3",               32817
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Detail",                      32772
+        MENUITEM "Drop Zone",                   32787
+        MENUITEM SEPARATOR
+        POPUP "ToolBar"
+        BEGIN
+            MENUITEM "Show Text",                   32797
+            MENUITEM SEPARATOR
+            MENUITEM "Buttons...",                  32798
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Columns...",                  32792
+        MENUITEM SEPARATOR
+        POPUP "Language"
+        BEGIN
+            MENUITEM "English",                     224
+        END
+    END
+    POPUP "&Jobs"
+    BEGIN
+        MENUITEM "New Download...\tF4",         IDM_JOB_NEW_DOWNLOAD
+        MENUITEM "Add batch download...",       IDM_JOB_ADD_BATCH_DOWNLOAD
+        MENUITEM "Start\tF5",                   IDM_JOB_START
+        MENUITEM "Pause\tF6",                   IDM_JOB_PAUSE
+        MENUITEM "Start All\tF8",               IDM_JOB_START_ALL
+        MENUITEM "Pause All\tF9",               IDM_JOB_PAUSE_ALL
+        MENUITEM "Schedule\tAlt+S",             IDM_JOB_SCHEDULE
+        MENUITEM SEPARATOR
+        MENUITEM "Move To...\tAlt+M",           IDM_JOB_MOVE_TO
+        MENUITEM "Delete\tAlt+Del",             IDM_JOB_DELETE
+        POPUP "Rename..."
+        BEGIN
+            MENUITEM "Rename",                      IDM_JOB_RENAME_RENAME
+            MENUITEM "Comment As Filename",         IDM_JOB_RENAME_COMMENT_AS_FILENAME
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Properties...\tAlt+Enter",    IDM_JOB_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Move Up\tAlt+Up",             IDM_JOB_MOVE_UP
+        MENUITEM "Move Down\tAlt+Down",         IDM_JOB_MOVE_DOWN
+        MENUITEM SEPARATOR
+        MENUITEM "Check for update",            IDM_JOB_CHECK_FOR_UPDATE
+        MENUITEM "Download Again",              IDM_JOB_DOWNLOAD_AGAIN
+        MENUITEM SEPARATOR
+        MENUITEM "Open downloaded file\tEnter", IDM_JOB_OPEN_DOWNLOADED_FILE
+        MENUITEM "Open destination directory\tCtrl+Enter", 
+                                                IDM_JOB_OPEN_DEST_DIR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Connect/Disconnect",          32848
+        MENUITEM "Site Explorer\tF7",           32866
+        MENUITEM SEPARATOR
+        MENUITEM "Shut Down When Done",         32805
+        MENUITEM "Hang Up When Done\tAlt+H",    32804
+        MENUITEM "Redial if Disconnected",      32806
+        MENUITEM SEPARATOR
+        MENUITEM "Obey Speed Limit\tAlt+L",     32812
+        MENUITEM SEPARATOR
+        MENUITEM "Save as default",             32818
+        MENUITEM "Default Download Properties...\tAlt+Ctrl+O", 
+                                                IDM_TOOLS_DEFAULT_DOWNLOAD_PROPERTIES
+
+        MENUITEM "Options...\tAlt+O",           IDM_TOOLS_OPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "User Manual",                 32823
+        MENUITEM SEPARATOR
+        MENUITEM "Remove Banner...",            32846
+        MENUITEM SEPARATOR
+        MENUITEM "Check for a new version",     32858
+        MENUITEM "&About FlashGet...",          57664
+        MENUITEM "Goto FlashGet Home Page ->",  32796
+    END
+END
+
+IDM_CATEGORY_CONTEXT MENU FIXED IMPURE 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "Open",                        IDM_CATEGORY_CONTEXT_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "New Category",                IDM_CATEGORY_CONTEXT_NEW
+        MENUITEM "Delete",                      IDM_CATEGORY_CONTEXT_DELETE
+        MENUITEM "Move to...",                  IDM_CATEGORY_CONTEXT_MOVE_TO
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  IDM_CATEGORY_CONTEXT_PROP
+    END
+END
+
+IDM_DOWNLOAD_JOB_CONTEXT MENU FIXED IMPURE 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "Start",                       IDM_JOB_START
+        MENUITEM "Pause",                       IDM_JOB_PAUSE
+        MENUITEM "Start All",                   IDM_JOB_START_ALL
+        MENUITEM "Pause All",                   IDM_JOB_PAUSE_ALL
+        MENUITEM "Schedule",                    IDM_JOB_SCHEDULE
+        MENUITEM SEPARATOR
+        MENUITEM "Move to...",                  IDM_JOB_MOVE_TO
+        MENUITEM "Delete",                      IDM_JOB_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Properties...",               IDM_JOB_PROPERTIES
+        MENUITEM "Comment...",                  IDM_JOB_COMMENT
+        MENUITEM "Browse Referrer",             IDM_JOB_BROWSE_REFERRER
+        MENUITEM SEPARATOR
+        MENUITEM "Copy URL to clipboard",       IDM_JOB_COPY_URL_TO_CLIP
+    END
+END
+
+IDM_COMMON_JOB_CONTEXT MENU FIXED IMPURE 
+BEGIN
+    POPUP "Pop"
+    BEGIN
+        MENUITEM "Move to...",                  IDM_JOB_MOVE_TO
+        MENUITEM "Delete",                      IDM_JOB_DELETE
+        MENUITEM "Delete All",                  IDM_JOB_DELETE_ALL
+        POPUP "Rename"
+        BEGIN
+            MENUITEM "Rename",                      IDM_JOB_RENAME_RENAME
+            MENUITEM "Comment As Filename",         IDM_JOB_RENAME_COMMENT_AS_FILENAME
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Properties...",               IDM_JOB_PROPERTIES
+        MENUITEM "Comment...",                  IDM_JOB_COMMENT
+        MENUITEM "Browse Referer",              IDM_JOB_BROWSE_REFERRER
+        MENUITEM SEPARATOR
+        MENUITEM "Copy URL to clipboard",       IDM_JOB_COPY_URL_TO_CLIP
+        MENUITEM "Export...",                   IDM_JOB_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Check for update",            IDM_JOB_CHECK_FOR_UPDATE
+        MENUITEM "Download Again",              IDM_JOB_DOWNLOAD_AGAIN
+        MENUITEM "Fix Corrupted Zip File",      IDM_JOB_OPEN_DOWNLOADED_FILE
+        MENUITEM SEPARATOR
+        MENUITEM "Virus Scan",                  IDM_JOB_VIRUS_SCAN
+        MENUITEM "Open downloaded file\tEnter", IDM_JOB_OPEN_DOWNLOADED_FILE
+        MENUITEM "Open destination directory\tCtrl+Enter", 
+                                                IDM_JOB_OPEN_DEST_DIR
+    END
+END
+
+IDM_TRAY_CONTEXT MENU FIXED IMPURE 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "Open/Hide FlashGet",          32790
+        MENUITEM SEPARATOR
+        MENUITEM "Show DropZone",               32787
+        MENUITEM "Monitor ClipBoard",           32801
+        MENUITEM "Disable Browser Monitoring",  32855
+        MENUITEM SEPARATOR
+        MENUITEM "Start All",                   32849
+        MENUITEM "Pause All",                   32802
+        MENUITEM SEPARATOR
+        MENUITEM "New Download...",             32779
+        MENUITEM "Paste URL",                   57637
+        MENUITEM SEPARATOR
+        MENUITEM "Obey Speed Limit",            32812
+        MENUITEM SEPARATOR
+        MENUITEM "Site Explorer",               32866
+        MENUITEM SEPARATOR
+        MENUITEM "Options...",                  32786
+        MENUITEM "&About",                      57664
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       57665
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MyGet"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MyGet Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDR_MAINFRAME DIALOGEX 0, 0, 102, 16
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,0,101,15,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_CATEGORY DIALOGEX 0, 0, 238, 196
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Category Name:",1197,7,3,165,8
+    EDITTEXT        IDC_CATEGORY_NAME_EDIT,7,13,168,12,ES_AUTOHSCROLL
+    LTEXT           "&Default Directory:",1198,7,28,167,8
+    EDITTEXT        IDC_DEFAULT_DIR_EDIT,7,38,150,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_FOLDER_BUTTON,161,38,14,12
+    DEFPUSHBUTTON   "OK",IDOK,181,3,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,181,20,50,14
+    LTEXT           "Sub-Category:",1199,7,73,88,8
+    LTEXT           "Total Files:",1200,7,90,85,9
+    LTEXT           "Downloaded File:",1201,7,110,88,9
+    LTEXT           "Downloaded Size:",1202,7,130,84,11
+    LTEXT           "1",IDC_SUB_CATEGORY_COUNT,100,73,60,8
+    LTEXT           "1",IDC_TOTAL_FILES,100,90,60,8
+    LTEXT           "1",IDC_COUNT_DOWNLOADED_FILES,100,111,60,8
+    LTEXT           "1",IDC_DOWNLOADED_SIZE,100,130,60,8
+    LTEXT           "Title",IDC_TITLE_STATIC,8,58,176,10
+    CONTROL         "Tree1",IDC_CATEGORY_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | 
+                    WS_BORDER | WS_TABSTOP,6,72,179,119,WS_EX_CLIENTEDGE
+END
+
+193 DIALOG FIXED IMPURE  0, 0, 187, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Delete"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,76,55,50,14
+    PUSHBUTTON      "Cancel",2,130,55,50,14
+    LTEXT           "Are you sure you wish to permanently delete these item(s)?",
+                    1197,7,7,173,18
+    CONTROL         "Delete downloaded file",1178,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,35,173,11
+END
+
+IDD_OPTIONS_GENERAL DIALOG FIXED IMPURE  0, 0, 297, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Start main window minimized",
+                    IDC_CHK_START_MAINFRAME_MINIMIZED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,283,10
+    CONTROL         "Prompt when a file is dropped on the DropZone",
+                    IDC_CHK_PROMPT_WHEN_DROP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,19,283,10
+    CONTROL         "Still download from non-resumable sites",
+                    IDC_CHK_STILL_DOWNLOAD_EVEN_NONRESUMABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,31,283,10
+    CONTROL         "If error occurs stop download",IDC_CHK_ERROR_STOP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,45,246,10
+    CONTROL         "Auto save listed file every",IDC_CHK_AUTO_SAVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,58,191,10
+    EDITTEXT        IDC_EDT_AUTO_SAVE_INTERVAL,202,58,29,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "minutes",1197,237,59,53,11
+    CONTROL         "Get File Date and Time From Server",
+                    IDC_CHK_GET_FILE_DATE_FROM_SERVER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,73,283,10
+    CONTROL         "Start downloading on startup",
+                    IDC_CHK_START_DOWNLOAD_ON_STARTUP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,86,283,11
+    CONTROL         "Use ""jc!"" as file extension til download is finished",
+                    IDC_CHK_USE_FILE_EXT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,100,283,10
+    CONTROL         "Display file size in bytes",IDC_CHK_FILE_SIZE_IN_BYTES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,115,283,10
+    CONTROL         "Auto backup download database every day",
+                    IDC_CHK_BACKUP_EVERY_DAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,129,283,12
+    CONTROL         "Write individual *.log file for each downloaded file",
+                    IDC_CHK_LOG_FOR_EACH_DOWNLOADED_FILE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,142,277,11
+    LTEXT           "Min Segment Size:",1198,7,157,153,11
+    EDITTEXT        IDC_EDT_BLOCK_SIZE,184,155,48,13,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPN_BLOCK_SIZE,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,231,155,
+                    11,13
+    LTEXT           "K",1199,233,156,22,12
+END
+
+IDD_OPTIONS_PROXY DIALOGEX 0, 0, 293, 176
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Proxy"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST_PROXY,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,7,279,104,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Add",1155,7,115,63,14
+    PUSHBUTTON      "EDIT",IDC_BTN_EDIT_PROXY,115,115,63,14
+    PUSHBUTTON      "Delete",IDC_BTN_DELETE,223,116,63,14
+    LTEXT           "RollBack:",1197,7,136,59,8
+    EDITTEXT        IDC_EDT_ROLL_BACK_SIZE,69,134,50,12,ES_AUTOHSCROLL
+    LTEXT           "Bytes",1198,126,136,60,8
+    CONTROL         "All Jobs Use Default Proxy",
+                    IDC_CHK_ALL_JOBS_USE_DEFAULT_PROXY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,152,230,11
+END
+
+IDD_OPTIONS_CONNECTION DIALOG FIXED IMPURE  0, 0, 292, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Connection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Time out",1197,7,7,278,49
+    LTEXT           "Connection:",1198,14,24,52,8
+    EDITTEXT        IDC_EDIT_CONNECTON_TIME_OUT,69,22,39,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_CONNECTION_TIME_OUT,"msctls_updown32",
+                    UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | 
+                    UDS_HOTTRACK,109,20,11,12
+    RTEXT           "Data:",1199,125,25,38,8
+    EDITTEXT        IDC_EDIT_DATA_TIME_OUT,165,22,39,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_DATA_TIME_OUT,"msctls_updown32",
+                    UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | 
+                    UDS_HOTTRACK,205,22,12,12
+    LTEXT           "Retry Delay:",1206,14,40,54,11
+    EDITTEXT        IDC_EDIT_RETRY_DELAY,69,40,39,12,ES_AUTOHSCROLL
+    CONTROL         "Spin3",IDC_SPIN_RETRY_DELAY,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,114,38,11,
+                    14
+    GROUPBOX        "Limit",1200,7,59,278,62
+    LTEXT           "Max simultaneous jobs:",1201,15,72,103,8
+    EDITTEXT        IDC_EDIT_MAX_SIM_JOBS,120,72,39,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_MAX_SIM_JOBS,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,160,71,11,
+                    12
+    LTEXT           "Number of retries:",1202,15,89,85,8
+    EDITTEXT        IDC_EDIT_NUM_OF_RETRIES,120,89,39,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_NUM_OF_RETRIES,"msctls_updown32",
+                    UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS | 
+                    UDS_HOTTRACK,153,89,11,12
+    CONTROL         "Always Retry",IDC_CHECK_ALWAYS_RETRY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,168,89,109,12
+    GROUPBOX        "Download Speed Limit",1203,7,122,278,52
+    LTEXT           "Speed",1204,14,138,38,10
+    EDITTEXT        IDC_EDIT_SPEED_LIMIT,57,137,39,12,ES_AUTOHSCROLL
+    LTEXT           "k/s",1205,100,138,41,10
+    CONTROL         "Always obey speed limit",
+                    IDC_CHECK_ALWARYS_OBEY_SPEED_LIMIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,157,241,10
+    CONTROL         "Stop download when over 99 times but not received any file data",
+                    IDC_CHECK_STOP_AFTER_99_NO_DATA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,105,265,11
+END
+
+IDD_OPTIONS_PROTOCOL DIALOG FIXED IMPURE  0, 0, 291, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Protocol"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Ftp",1197,7,7,277,84
+    LTEXT           "Use ASCII mode for files of type:",1198,13,18,205,11
+    EDITTEXT        IDC_EDIT_ASCII_MODE,14,31,261,23,ES_AUTOHSCROLL
+    LTEXT           "EMail Address for Anonymous Ftp Logins:",1202,14,59,262,
+                    10
+    EDITTEXT        IDC_EDIT_EMAIL,14,73,261,14,ES_AUTOHSCROLL
+    GROUPBOX        "HTTP",1199,7,95,277,52
+    LTEXT           "User-Agent:",1200,13,108,81,10
+    COMBOBOX        IDC_CBX_USER_AGENT,96,107,178,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "User define:",1201,13,127,81,13
+    EDITTEXT        IDC_EDIT_USER_DEFINE_AGENT,96,126,178,14,ES_AUTOHSCROLL
+    CONTROL         "Enable Cookies",IDC_CHECK_ENABLE_COOKIE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,153,218,12
+END
+
+IDD_OPTIONS_MONITOR DIALOG FIXED IMPURE  0, 0, 301, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Monitor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Clipboard",1197,7,7,287,23
+    CONTROL         "Monitor",IDC_CHK_CLIPBOARDMONITOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,17,101,10
+    CONTROL         "Confirmation",IDC_CHK_CLIPBOARDCONFIRM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,174,17,89,10
+    GROUPBOX        "Browser Clicks",1198,7,32,287,89
+    CONTROL         "Netscape Navigator",IDC_CHK_BROWSERNETSCAPE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,43,88,10
+    CONTROL         "Confirmation",IDC_CHK_BROWSERCONFIRM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,55,123,11
+    CONTROL         "Use ALT key",IDC_CHK_BROWSERUSEALT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,70,124,10
+    CONTROL         "Open cancelled URLs in browser",
+                    IDC_CHK_BROWSEROPENCANCELLEDURLS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,82,170,11
+    CONTROL         "Fill comment with clipboard contents",
+                    IDC_CHK_BROWSERFILLCOMMENTWITHCLIPBOARDCONTENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,95,172,12
+    CONTROL         "Internet Explorer",IDC_CHK_BROWSERIE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,174,43,112,12
+    CONTROL         "Method 1",IDC_RD_BROWSERIEMETHOD1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,190,57,83,10
+    CONTROL         "Method 2",IDC_RD_BROWSERIEMETHOD2,"Button",
+                    BS_AUTORADIOBUTTON,190,71,83,10
+    CONTROL         "Wild Match",IDC_CHK_BROWSERIEWILDMATCH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,190,86,95,12
+    PUSHBUTTON      "Default Manager",IDC_BTN_DEFAULTMANAGER,192,102,95,15
+    LTEXT           "Monitor these types:",1199,7,123,287,11
+    EDITTEXT        IDC_EDT_MONITORTYPES,7,135,287,26,ES_MULTILINE | 
+                    WS_VSCROLL
+END
+
+IDD_OPTIONS_GRAPH_LOG DIALOG FIXED IMPURE  0, 0, 291, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Graph/Log"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Graph",1197,7,7,277,51
+    LTEXT           "&Scale:",1198,13,22,45,8
+    EDITTEXT        IDC_EDT_GRAPHSCALE,65,20,45,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPN_GRAPHSCALE,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,111,21,12,
+                    12
+    LTEXT           "K/Sec",1199,122,21,43,11
+    LTEXT           "&ForeColor:",1200,13,43,48,8
+    PUSHBUTTON      "",IDC_BTN_GRAPHFORE,65,41,45,13
+    LTEXT           "&BackColor:",1201,119,43,60,10
+    PUSHBUTTON      "",IDC_BTN_GRAPHBACK,181,41,45,13
+    GROUPBOX        "Log Window",1202,7,62,277,73
+    CONTROL         "S&etting Backcolor",IDC_CHK_LOGSETTINGBKCOLOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,72,169,10
+    PUSHBUTTON      "State Line",IDC_BTN_LOGSTATE,27,89,96,15
+    PUSHBUTTON      "Command Line",IDC_BTN_LOGCOMMAND,160,89,96,15
+    PUSHBUTTON      "Error Line",IDC_BTN_LOGERROR,27,112,96,15
+    PUSHBUTTON      "Server Line",IDC_BTN_LOGSERVER,160,112,96,15
+    CONTROL         "Display Graph At DropZone",IDC_CHK_DROPZONEDISPLAYGRAPH,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,137,154,15
+    CONTROL         "Transparent",IDC_CHK_DROPZONETRANSPARENT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,179,140,105,12
+    LTEXT           "Block Size:",1203,7,155,75,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDT_BLOCKSIZE,87,155,45,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPN_BLOCKSIZE,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,135,155,
+                    10,13
+    PUSHBUTTON      "&Reset",1075,240,155,44,13
+    LTEXT           "K",1204,134,156,18,12
+    PUSHBUTTON      "",IDC_BTN_BLOCKBACK,157,155,74,13
+END
+
+IDD_OPTIONS_SOUND DIALOG FIXED IMPURE  0, 0, 290, 179
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sounds"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "P&opup messagebox when download completes",1219,7,7,276,
+                    54
+    CONTROL         "Download Success",IDC_CHK_DOWNLOADSUCCEED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,18,263,11
+    CONTROL         "Download Failure",IDC_CHK_DOWNLOADFAILED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,32,263,11
+    CONTROL         "All Done",IDC_CHK_DOWNLOADALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,46,263,11
+    CONTROL         "&Enable Sound",IDC_CHK_ENABLESOUND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,63,200,12
+    LTEXT           "&Sounds",1197,7,78,123,10
+    CONTROL         "List1",IDC_LV_SOUNDS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,91,276,64
+    PUSHBUTTON      "&Play",IDC_BTN_PLAYSOUND,7,159,47,13
+    PUSHBUTTON      "&None",IDC_BTN_CLEARSOUND,121,159,47,13
+    PUSHBUTTON      "&Browse",IDC_BTN_BROWSESOUND,235,159,47,13
+END
+
+IDD_OPTIONS_OTHER DIALOG FIXED IMPURE  0, 0, 293, 176
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Other"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Setting:",1201,7,7,157,9
+    CONTROL         "Tree1",IDC_TV_OTHERS,"SysTreeView32",WS_BORDER | 
+                    WS_TABSTOP,7,18,279,151
+END
+
+IDD_OPTIONS_SCHEDULE DIALOG FIXED IMPURE  0, 0, 290, 138
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Schedule"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Start downloading file at",1197,7,7,276,70
+    CONTROL         "DateTimePicker1",IDC_DTP_DOWNLOADSTARTAT,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP | 0x8,14,21,73,15
+    CONTROL         "Monday",IDC_CHK_STARTDOWNLOADAT_MONDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,43,61,10
+    CONTROL         "Tuesday",IDC_CHK_STARTDOWNLOADAT_TUESDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,78,43,67,10
+    CONTROL         "Wednesday",IDC_CHK_STARTDOWNLOADAT_WEDNESDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,148,43,70,10
+    CONTROL         "Thursday",IDC_CHK_STARTDOWNLOADAT_THURSDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,220,42,57,10
+    CONTROL         "Friday",IDC_CHK_STARTDOWNLOADAT_FRIDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,61,61,10
+    CONTROL         "Saturday",IDC_CHK_STARTDOWNLOADAT_SATURDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,78,61,67,10
+    CONTROL         "Sunday",IDC_CHK_STARTDOWNLOADAT_SUNDAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,148,60,70,10
+    GROUPBOX        "",-1,7,84,276,41
+    CONTROL         "Stop downloading files at",IDC_CHK_ENABLESTOPTIMER,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,83,153,13
+    CONTROL         "DateTimePicker2",IDC_DTP_DOWNLOADSTOPAT,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | 
+                    WS_TABSTOP | 0x8,14,101,73,15
+END
+
+IDD_OPTIONS_MIRROR DIALOG FIXED IMPURE  0, 0, 290, 162
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mirrors"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Enable Mirrors",IDC_CHK_ENABLEMIRROW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,218,13
+    GROUPBOX        "Current Geographic Location:",1202,7,22,276,44
+    LTEXT           "Country &Code:",1200,15,35,85,11
+    EDITTEXT        1241,109,31,29,13,ES_AUTOHSCROLL
+    LTEXT           "Country &List:",1201,15,51,84,10
+    EDITTEXT        1242,109,47,106,13,ES_AUTOHSCROLL
+    CONTROL         "A&utomatically calculate and add alternate URLs",
+                    IDC_CHK_AUTOCALCADDMIRRORS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,70,276,10
+    CONTROL         "&Automatically search for mirror sites when starting download",
+                    IDC_CHK_AUTOSEARCHMIRRORSITES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,82,276,13
+    LTEXT           "&Server:",1203,19,99,52,9
+    COMBOBOX        1159,76,97,195,58,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Min. size for automatic mirror sites search-",1197,19,
+                    116,199,8
+    EDITTEXT        IDC_EDT_FTPSEARCHMINSIZE,223,113,48,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_MINSIZE,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,258,108,
+                    12,26
+    LTEXT           "K",1198,273,115,10,8
+    LTEXT           "Max &Hit:",1199,19,129,97,11
+    EDITTEXT        IDC_EDT_FTPSEARCHMAXHIT,123,127,37,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_MAXHIT,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,161,129,
+                    12,18
+    CONTROL         "Automatically select &best mirror sites for download",
+                    IDC_CHK_AUTOSELECTMIRROR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,143,276,12
+END
+
+IDD_OPTIONS_LOGIN DIALOG FIXED IMPURE  0, 0, 293, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Login"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",1013,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,279,132
+    PUSHBUTTON      "&Add",1155,7,149,63,14
+    PUSHBUTTON      "&Edit",1156,115,149,63,14
+    PUSHBUTTON      "&Delete",1157,223,149,63,14
+END
+
+IDD_OPTIONS_FILE_MANAGEMENT DIALOG FIXED IMPURE  0, 0, 293, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Manager"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Move downloaded Item(s) to other category",1197,7,7,279,
+                    26
+    CONTROL         "Do &No move",IDC_RD_MOVEDOWNLOADEDITEM_DONOTMOVE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,13,18,89,10
+    CONTROL         "&Prompt",IDC_RD_MOVEDOWNLOADEDITEM_PROMPT,"Button",
+                    BS_AUTORADIOBUTTON,111,18,92,10
+    CONTROL         "&Move",IDC_RD_MOVEDOWNLOADEDITEM_MOVE,"Button",
+                    BS_AUTORADIOBUTTON,207,18,73,10
+    GROUPBOX        "If destination file exists",1198,7,41,279,24
+    CONTROL         "Overwrite",IDC_RD_DESTINATIONEXISTS_OVERWRITE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,13,52,92,10
+    CONTROL         "Auto Rename",IDC_RD_DESTINATIONEXISTS_AUTORENAME,"Button",
+                    BS_AUTORADIOBUTTON,111,52,90,10
+    CONTROL         "Stop",IDC_RD_DESTINATIONEXISTS_STOP,"Button",
+                    BS_AUTORADIOBUTTON,207,51,72,12
+    CONTROL         "Use virus scanner to scan the downloaded file(s)",
+                    IDC_CHK_VIRUSSCANDOWNLOADEDFILES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,71,279,10
+    EDITTEXT        IDC_EDT_VIRUSSCANNER,7,86,232,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browser",IDC_BTN_BROWSEVIRUSSCANNER,245,86,41,14
+    LTEXT           "&Args:",1199,7,102,51,11
+    EDITTEXT        IDC_EDT_VIRUSSCANNERARGS,7,114,69,14,ES_AUTOHSCROLL
+    LTEXT           "File types to send to virus scanner",1200,84,102,202,12
+    EDITTEXT        IDC_EDT_VIRUSSCANNERTYPES,84,114,202,14,ES_AUTOHSCROLL
+    CONTROL         "Open(View) files when finished downloading",
+                    IDC_CHK_OPENFILEWHENDOWNLOADED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,131,279,13
+    LTEXT           "File types:",1201,7,148,76,12
+    EDITTEXT        IDC_EDT_OPENTYPES,84,147,202,14,ES_AUTOHSCROLL
+    CONTROL         "Move some files to portable storage devices:",
+                    IDC_CHK_MOVESOMEFILESTOPORTABLESTORAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,165,231,12
+    COMBOBOX        IDC_CBX_STORAGES,251,165,35,45,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_OPTIONS_DIAL_UP DIALOG FIXED IMPURE  0, 0, 291, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dial-Up Networking"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Hang up when done",1082,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,7,257,10
+    GROUPBOX        "Dial-Up Settings",1197,7,20,277,146
+    LTEXT           "Connection:",1198,13,32,55,8
+    COMBOBOX        1041,71,32,207,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Username:",1199,13,50,56,9
+    EDITTEXT        1010,71,48,93,12,ES_AUTOHSCROLL
+    LTEXT           "Password:",1200,14,66,55,12
+    EDITTEXT        1011,71,66,93,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Redial if disconnected",1081,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,88,199,11
+    LTEXT           "Retry failed conection",1201,14,106,115,8
+    EDITTEXT        1086,129,103,35,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",1122,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,165,105,
+                    10,11
+    LTEXT           "times",1202,177,105,78,8
+    LTEXT           "Between retry wait ",1203,14,121,115,8
+    EDITTEXT        1045,129,119,36,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",1123,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,166,119,
+                    12,11
+    LTEXT           "sec",1204,177,120,87,9
+    LTEXT           "Connection Interrupted Window Title:",1205,13,135,200,9
+    EDITTEXT        1088,13,144,257,15,ES_AUTOHSCROLL
+END
+
+IDD_FOLDER_SELECTION DIALOG FIXED IMPURE  0, 0, 231, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Folder Selection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Select Folder",1197,7,7,157,13
+    COMBOBOX        IDC_FILELIST,7,21,143,71,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_OEMCONVERT | WS_TABSTOP
+    PUSHBUTTON      "->",IDC_SYNCH_FOLDERS,154,21,12,14
+    LTEXT           "&Folders/Drivers",1198,7,44,159,11
+    CONTROL         "Tree1",IDC_BROWSE_TREE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | 
+                    TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,59,159,149
+    DEFPUSHBUTTON   "OK",IDOK,174,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,174,24,50,14
+    PUSHBUTTON      "&New Folder",IDC_BTN_NEW_FOLDER,172,193,52,15
+END
+
+IDD_NEW_FOLDER DIALOG FIXED IMPURE  0, 0, 232, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Folder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Current Folder",1197,7,7,157,11
+    LTEXT           "Static",IDC_TEXT_CURRENT_FOLDER,7,20,160,11
+    LTEXT           "&New Folder Name",1198,7,34,158,12
+    EDITTEXT        IDC_EDT_NEW_FOLDER_NAME,7,48,158,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,174,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,174,24,50,14
+END
+
+IDD_PROXY_SETTINGS DIALOG FIXED IMPURE  0, 0, 239, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Proxy settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Title:",1197,7,7,34,11
+    EDITTEXT        IDC_EDIT_TITILE,44,7,188,13,ES_AUTOHSCROLL
+    LTEXT           "&Server:",1198,7,28,35,8
+    EDITTEXT        IDC_EDIT_SERVER,44,26,112,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    RTEXT           "P&ort:",1199,157,28,35,9
+    EDITTEXT        IDC_EDIT_PORT,193,25,39,13,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "Type",1200,7,47,129,137
+    CONTROL         "&Direct connection",IDC_RIDIO_DIR_CONNECTION,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,13,61,117,10
+    CONTROL         "&HTTP <Get>",IDC_RIDIAO_HTTP_GET,"Button",
+                    BS_AUTORADIOBUTTON,13,73,117,12
+    CONTROL         "HTTP <Connect>",IDC_RIDIAO_HTTP_CONNECT,"Button",
+                    BS_AUTORADIOBUTTON,13,87,110,9
+    CONTROL         "&FTP <User user@host:port>",
+                    IDC_RIDIAO_FTP_USER_HOST_PORT1,"Button",
+                    BS_AUTORADIOBUTTON,13,98,115,14
+    CONTROL         "FTP <User user@host port>",
+                    IDC_RIDIAO_FTP_USER_HOST_PORT2,"Button",
+                    BS_AUTORADIOBUTTON,13,114,114,11
+    CONTROL         "FTP <Open host>",IDC_RIDIAO_FTP_OPEN_HOST,"Button",
+                    BS_AUTORADIOBUTTON,13,127,115,11
+    CONTROL         "FTP <Site host>",IDC_RIDIAO_FTP_SITE_HOST,"Button",
+                    BS_AUTORADIOBUTTON,13,140,115,11
+    CONTROL         "FTP <Site user@host>",IDC_RIDIAO_FTP_SITE_USER_HOST,
+                    "Button",BS_AUTORADIOBUTTON,13,153,115,11
+    CONTROL         "SOCKS5",IDC_RIDIAO_SOCKS5,"Button",BS_AUTORADIOBUTTON,
+                    13,166,105,11
+    CONTROL         "&No-Cache",IDC_CHECK_NO_CACHE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,140,54,92,10
+    CONTROL         "PASV &Mode",IDC_CHECK_PASV_MODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,140,67,92,10
+    CONTROL         "&Authenticate",IDC_CHECK_AUTH,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,140,80,92,10
+    LTEXT           "&User:",1201,140,94,82,8
+    EDITTEXT        IDC_EDIT_USER,140,107,91,13,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "&Password:",1202,140,126,85,8
+    EDITTEXT        IDC_EDIT_PASSWORD,140,137,92,13,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "OK",IDOK,125,192,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,182,192,50,14
+END
+
+IDD_DOWNLOAD_PROP DIALOG FIXED IMPURE  0, 0, 287, 234
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Download"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&URL:",IDC_TEXT_URL,7,4,42,8
+    EDITTEXT        IDC_EDIT_URL,50,2,212,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_SET_SUBSTITUTED_URLS,266,2,14,12
+    CONTROL         "Find alternate URLs through the mirror list file or Ftp Search",
+                    IDC_CHECK_ENABLE_MIRROR_AND_FTP_SEARCH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,16,273,12
+    LTEXT           "&Referrer:",1197,7,31,41,8
+    EDITTEXT        IDC_EDIT_REFERER,50,29,230,12,ES_AUTOHSCROLL
+    LTEXT           "&Category:",1198,7,49,41,8
+    CONTROL         "",IDC_CBX_CATEGORY,"ComboBoxEx32",CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,50,47,209,164
+    PUSHBUTTON      "...",IDC_BTN_CREATE_NEW_CATEGORY,265,48,15,12
+    LTEXT           "S&ave to:",1199,7,65,41,8
+    EDITTEXT        IDC_EDIT_PATH,50,63,209,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_SELECT_NEW_FOLDER,265,63,15,12
+    LTEXT           "R&ename:",IDC_TEXT_RENAME,7,83,41,8
+    EDITTEXT        IDC_EDIT_RENAME,50,81,103,12,ES_AUTOHSCROLL
+    LTEXT           "Spli&t file",1201,7,100,41,8
+    EDITTEXT        IDC_EDIT_SPLIT,50,98,31,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_SPLIT,"msctls_updown32",UDS_WRAP | 
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,81,84,12,
+                    14
+    LTEXT           "part simultaneous download",1202,85,101,74,8
+    CONTROL         "Lo&gin to Server:",IDC_CHECK_LOGIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,116,134,9
+    LTEXT           "User&name:",1206,7,130,43,8
+    EDITTEXT        IDC_EDIT_USERNAME,50,128,76,12,ES_AUTOHSCROLL
+    LTEXT           "&Password:",1207,7,146,42,8
+    EDITTEXT        IDC_EDIT_PASSWORD,50,143,76,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    GROUPBOX        "Start",1209,7,157,119,52
+    CONTROL         "&Manual",IDC_RADIO_MANUAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,14,170,74,10
+    CONTROL         "&Immediately",IDC_RADIO_IMMEDIATELY,"Button",
+                    BS_AUTORADIOBUTTON,14,182,95,10
+    CONTROL         "&Schedule",IDC_RADIO_SCHEDULE,"Button",
+                    BS_AUTORADIOBUTTON,14,194,102,10
+    GROUPBOX        "Proxy",1203,159,76,121,47
+    LTEXT           "&Http:",1204,165,87,18,8
+    COMBOBOX        IDC_CBX_HTTP_PROXY,187,84,86,76,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Ftp:",1205,165,106,18,8
+    COMBOBOX        IDC_CBX_FTP_PROXY,187,104,86,76,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C&omment:",IDC_TEXT_COMMENT,133,123,86,8
+    LTEXT           "Notice: FlashGet manages downloaded files differently than other download software. If you want to change the default download directory, please change every category's directory's property. It's recommended you read the FAQ or the User Guide. ",
+                    IDC_TEXT_NOTICE,137,133,143,77,NOT WS_VISIBLE
+    PUSHBUTTON      "Save As Default",IDC_BTN_SAVE_AS_DEFAULT,7,213,119,14
+    EDITTEXT        IDC_EDIT_COMMENT,134,135,146,92,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_ADD_BATCH_DOWNLOAD DIALOG FIXED IMPURE  0, 0, 256, 131
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add batch job"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&URL:",-1,7,10,21,8
+    EDITTEXT        1001,47,7,202,14,ES_AUTOHSCROLL
+    LTEXT           "Sample:",1202,7,25,38,8
+    EDITTEXT        1037,47,36,36,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",1122,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,75,38,12,10
+    LTEXT           "&To:",1198,85,40,20,8
+    EDITTEXT        1118,106,36,35,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",1123,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,120,36,10,13
+    LTEXT           "Wildcard bytes:",1199,143,40,70,8
+    EDITTEXT        1038,215,36,34,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",1124,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | UDS_HOTTRACK,237,39,12,10
+    EDITTEXT        1145,7,74,242,33,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    DEFPUSHBUTTON   "OK",1,143,110,50,14
+    PUSHBUTTON      "Cancel",2,199,110,50,14
+    CONTROL         "&From:",1197,"Button",BS_AUTORADIOBUTTON,7,39,39,10
+    CONTROL         "F&rom:",1200,"Button",BS_AUTORADIOBUTTON,7,55,36,10
+    EDITTEXT        1223,47,54,36,13,ES_AUTOHSCROLL
+    EDITTEXT        1224,106,54,35,13,ES_AUTOHSCROLL
+    LTEXT           "Note: Is Sase Sensitive",1201,144,57,105,10
+    LTEXT           "http://www.amazesoft.com/index(*).htm",-1,47,23,202,11
+END
+
+180 DIALOG FIXED IMPURE  0, 0, 264, 180
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Comment"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        1000,7,7,250,145,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    DEFPUSHBUTTON   "OK",1,152,159,50,14
+    PUSHBUTTON      "Cancel",2,207,159,50,14
+END
+
+IDD_SETUP_ALTERNATE_URLS DIALOG FIXED IMPURE  0, 0, 288, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Setup Alternate URLs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "URL",IDC_TEXT_URL,7,7,274,11
+    CONTROL         "List1",IDC_LIST_ALTERNATE_URLS,"SysListView32",
+                    LVS_REPORT | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,21,274,107
+    PUSHBUTTON      "&Add",IDC_BTN_ADD,139,134,40,14
+    PUSHBUTTON      "&Delete",IDC_BTN_DELETE,190,134,40,14
+    PUSHBUTTON      "&OK",IDOK,241,134,40,14
+END
+
+135 DIALOG FIXED IMPURE  0, 0, 246, 53
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_INPUT,7,7,232,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,134,32,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,189,32,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MyGet MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MyGet\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MyGet.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "MyGet Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CATEGORY, DIALOG
+    BEGIN
+        VERTGUIDE, 226
+        HORZGUIDE, 130
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    105                     "Failed to initialize Object Linking and Embedding"
+    ID_SPEED_BAR            "Speed Bar"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    IDR_MAINFRAME           "FlashGet\n\n\nFlashGet Files (*.jcd)\n.jcd\nFlashGet.Document\nFlashGet Document"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    211                     "FlashGet Offline Browser"
+    212                     "FlashGet Site Explorer"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    224                     "Display english."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    32771                   "Show or hide the templete site"
+    32772                   "Show or hide the detailed information"
+    IDM_JOB_START           "Start transferring selected file(s)"
+    IDM_JOB_PAUSE           "Pause download"
+    IDM_JOB_DELETE          "Delete selected items"
+    IDM_JOB_PROPERTIES      "Edit job properties"
+    IDM_JOB_OPEN_DOWNLOADED_FILE 
+                            "Open downloaded file using its default association"
+    IDM_JOB_OPEN_DEST_DIR   "Open files' destination directory."
+    IDM_JOB_NEW_DOWNLOAD    "Add new download"
+    32780                   "Create a new category."
+    32781                   "Category Properties"
+    32782                   "Move to another category."
+    32783                   "Delete a Category."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    IDM_TOOLS_OPTIONS       "Change options"
+    32787                   "Show/Hide drop zone window."
+    32788                   "Open the selected Category."
+    32790                   "Open or hide FlashGet main window"
+    IDM_TOOLS_DEFAULT_DOWNLOAD_PROPERTIES "Edit default download properties"
+    32792                   "Configures the columns displayed in the list."
+    32793                   "Move selected item to other Category."
+    32794                   "select all items."
+    32795                   "Reverse which items are selected and which are not."
+    32796                   "Go to the FlashGet home page"
+    32797                   "Show toolbar button text"
+    32798                   "Show button selection dialog."
+    IDM_JOB_MOVE_UP         "Move the selected item(s) up"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    IDM_JOB_MOVE_DOWN       "Move the selected item(s) down"
+    32801                   "Monitor clipboard."
+    32802                   "Pause all downloads."
+    32803                   "Copy select item to clipboard."
+    32804                   "Hang Up When Done"
+    32805                   "Shut Down When Done"
+    32806                   "Redial if Disconnected"
+    32807                   "Delete all items in current folder."
+    32808                   "Export downloaded file information."
+    32809                   "Schedule downloading time"
+    32812                   "Obey Speed Limit"
+    32813                   "Check selected file(s) for update."
+    32814                   "Download selected file(s) again."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    32816                   "Change download file comment."
+    32817                   "Find other match item."
+    32818                   "Save current settings as default settings."
+    32819                   "Add batch download."
+    32820                   "Scan selected file(s) for viruses."
+    32821                   "Add previously downloaded file to current download file database."
+    32822                   "Rename download file name."
+    32823                   "Online user manual"
+    32824                   "Save log to a file."
+    32825                   "Add selected URL to download list."
+    32826                   "Open selected URL in browser."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    32846                   "Register to remove the banner"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    32848                   "Connect/Disconnect from phone line."
+    32849                   "Start all downloads."
+    32850                   "Browser Referrer"
+    32851                   "Add previous batch downloaded files to current download file database."
+    32852                   "Display Recently Downloaded Files"
+    32855                   "Disable monitor browser click."
+    32856                   "Import other file which other FlashGet downloaded to current download database"
+    32857                   "Export file and download information"
+    32858                   "Check for a new version of FlashGet"
+    32859                   "Import URL's list."
+    32860                   "Export URL's list."
+    32861                   "Process Web Page File."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    32865                   "Recover browser's broken downloads"
+    32866                   "Site Explorer"
+    32867                   "Offline Browser"
+    32872                   "Sort items by Name."
+    32873                   "Sort items by Type."
+    32874                   "Sort items by Title."
+    32875                   "Sort items by Size."
+    32876                   "Sort items by URL."
+    32877                   "Sort items by Date."
+    32878                   "Sort items by Referer."
+    32879                   "Stop download or explore."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    32880                   "Refresh current item."
+    32881                   "Open new tool window"
+    32882                   "Download Selected Item(s)."
+    32884                   "Change Site Explorer options"
+    32885                   "Change listview display style."
+    32886                   "Clear the log window."
+    32887                   "Fix corrupted zip file."
+    32888                   "Comment As Filename"
+    32889                   "Merge download database."
+    32890                   "Show or hide the grid."
+    32891                   "filtering (hiding) files from the list."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    AFX_IDS_APP_TITLE       "FlashGet"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_FILE_NEW             "Create a new download file database"
+    ID_FILE_OPEN            "Open an existing download file database"
+    ID_FILE_CLOSE           "Close the active document"
+    ID_FILE_SAVE            "Save the active download file database"
+    ID_FILE_SAVE_AS         "Save the active download file database with a new name"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this download file database"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_CLEAR_ALL       "Erase everything"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard"
+    ID_EDIT_FIND            "Find the specified item"
+    ID_EDIT_PASTE           "Insert Clipboard contents"
+    ID_EDIT_REPEAT          "Repeat the last action"
+    ID_EDIT_REPLACE         "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL      "Select the entire document"
+    ID_EDIT_UNDO            "Undo the last action"
+    ID_EDIT_REDO            "Redo the previously undone action"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright"
+    ID_APP_EXIT             "Quit the application; and prompts to save download file database"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    59408                   "Display items by using small icons."
+    59409                   "Displays items by using large icons."
+    59410                   "Displays items in a list."
+    59411                   "Display information about each item in window."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    61204                   "Download"
+    61205                   "Upload"
+    61206                   "Downloaded"
+    61207                   "Uploaded"
+    61208                   ",,Name,Size,Completed,Percent,Elapsed,Left,Speed,Num,Retry,URL,Comment,Create Time,Complete Time"
+    61209                   "Chart/Log"
+    61210                   "Connecting %1 [IP=%2]"
+    61211                   "Connected."
+    61212                   "Cannot resolve host name"
+    61213                   "Connecting %1"
+    61214                   "Closed."
+    61215                   "User Cancel at %1."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61216                   "Create or Open file error."
+    61217                   "Invalid input."
+    61218                   "Time out."
+    61219                   "Wait %d second for retry"
+    61220                   "Maximum error. This part halted."
+    61221                   "Start Receiving Data!"
+    IDS_NEW_CATEGORY_TITLE  "Create new Category"
+    61223                   "Select Category"
+    IDS_CANNOT_MOVE_DELETE_CATEGORY "Can't move or delete special Category!"
+    IDS_DELETE_CATEGORY_PROMPT "Delete Category and all it's sub-categories?"
+    61226                   "Can't move Category!"
+    IDS_OPTION_TITLE        "Options"
+    61228                   "USER user@hostname,OPEN hostname"
+    IDS_NEW_DOWNLOAD_TILE   "Add new download"
+    IDS_PROP_CATEGORY_TITLE "Properties"
+    61231                   "Deleted"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61232                   "Select the category in which the new category should be created:"
+    IDS_MOVE_CATEGORY_TITLE "Move"
+    61234                   "Move the item(s) to the selected Category:"
+    61235                   "Completed move to the selected Category:"
+    IDS_DEFAULT_DOWNLOAD_PROPERTY_TITLE "Default download properties"
+    61238                   "Status,Resume,Name,Size,Completed,Percent,elapsed,Left,Speed,Num,Retry,URL,Comment,Create Time,Complete Time"
+    61239                   "Connecting proxy %1"
+    61241                   "Error occured!"
+    61242                   "Connecting proxy %1 [IP=%2]"
+    61243                   "Socket connected, Waiting for welcome message."
+    61244                   "Login Successful"
+    61245                   "This site can resume broken downloads."
+    61246                   "This site can't resume broken downloads."
+    61247                   "Received %1 bytes OK."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61248                   "Error Connected to %s , Port %d."
+    61249                   "File Not Found."
+    61250                   "Site doesn't support resume, download stopped"
+    61251                   "URL now in download list."
+    61252                   "File size unknown, can't start other parts."
+    61253                   "This program is expire.Please visit our home page download the new version."
+    61254                   "Start"
+    61255                   "Pause"
+    61256                   "New"
+    61257                   "Delete"
+    61258                   "Open"
+    61259                   "Directory"
+    61260                   "Default"
+    61261                   "About"
+    61262                   "HomePage"
+    61263                   "Up"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61264                   "Down"
+    61265                   "Automatic"
+    61266                   "More colors..."
+    61268                   "Also move downloaded file?"
+    61269                   "FlashGet - %1 file(s) in queue %2 file(s) downloading"
+    61270                   "FlashGet - %1 file(s) in queue"
+    61271                   "None,FlashGet,Internet Explore 3.x,Internet Explore 4.x,Internet Explore 5.x,Netscape Navigator 3.x,Netscape Navigator 4.x,User Define"
+    61272                   "Write to file error!"
+    61273                   "Reestablish Connection"
+    61274                   "(FlashGet Should Never Dial)"
+    61275                   "Start Dial"
+    61276                   "Wait dial."
+    61277                   "Dial-up Error: %1"
+    61278                   "Event,Sound File"
+    61279                   "Add new job,Download success,Download failure,All Down"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61280                   "Sound Files (*.WAV)"
+    61281                   "Redirect to %1"
+    61282                   "Redirect from %1\n"
+    61283                   "HTML File (*.htm; *.html)|*.htm;*.html|All Files (*.*)|*.*||"
+    61284                   "Export to HTML"
+    61285                   "Name,URL,Size,Date,Complete Time,Save as,Comment"
+    61286                   "Program (*.exe)|*.exe||"
+    61287                   "Schedule stop!"
+    61288                   "Site does not support resume. This part halted."
+    61289                   "ShutDown"
+    61290                   "FlashGet will shut down Windows in %d seconds."
+    61291                   "HangUp"
+    61292                   "FlashGet will hangup in %d seconds."
+    61293                   "Destination file exists, auto rename"
+    61294                   "Destination file exists, download halted."
+    61295                   "Are you sure you want to delete downloading job(s)?"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61296                   "Software,Game,Driver,Mp3"
+    61297                   "The file on server is the same as the file on the local machine."
+    61298                   "The file on the server is newer, you should download it again."
+    61299                   "Didn't receive any data within 99 tries, should stop."
+    61300                   "Item not found!"
+    61301                   "Date,Information"
+    61302                   "Parameter,Value"
+    61303                   "Info"
+    61304                   "URL,Comment,Referer,Resume,Local File,File Date,File Size,Completed,Total Time,Average Speed,Create Time,Complete Time"
+    61305                   "Add previously downloaded file"
+    61306                   "Rename"
+    61307                   "Direct Connection"
+    61308                   "Http Default,Ftp Default,Title"
+    61309                   "Links"
+    61310                   "Title,URL"
+    61311                   "Some jobs are running, Exit anyway?"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61312                   "Use the same setting for other files?"
+    61313                   "Error. Download again later."
+    61314                   "Thank you for registering FlashGet. Please restart the program. If you've typed your registration data correctly, the banners will be removed."
+    61315                   "Connected."
+    61316                   "Disconnected"
+    61317                   "Opening the port..."
+    61318                   "Port has been opened successfully"
+    61319                   "Connecting to the device..."
+    61320                   "The device has connected successfully."
+    61321                   "All devices in the device chain have been successfully connected."
+    61322                   "Verifying the user name and password..."
+    61323                   "An authentication event has occurred."
+    61324                   "Requested another validation attempt with a new user."
+    61325                   "Server has requested a callback number."
+    61326                   "The client has requested to change the password"
+    61327                   "Registering your computer on the network..."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61328                   "The link-speed calculation phase is starting..."
+    61329                   "An authentication request is being acknowledged."
+    61330                   "Reauthentication (after callback) is starting. "
+    61331                   "The client has successfully completed authentication."
+    61332                   "The line is about to disconnect for callback."
+    61333                   "Delaying to give the modem time to reset for callback."
+    61334                   "Waiting for an incoming call from server."
+    61335                   "Projection result information is available."
+    61336                   "User authentication is being initiated or retried."
+    61337                   "Client has been called back and is about to resume authentication."
+    61338                   "Logging on to the network..."
+    61339                   "Subentry has been connected"
+    61340                   "Subentry has been disconnected"
+    61341                   "Terminal state supported by RASPHONE.EXE."
+    61342                   "Retry authentication state supported by RASPHONE.EXE."
+    61343                   "Callback state supported by RASPHONE.EXE."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61344                   "Change password state supported by RASPHONE.EXE."
+    61345                   "Connect/Disconnect"
+    61346                   "File size already changed!"
+    61347                   "Find"
+    61348                   "Find Next"
+    61349                   "File is missing, browse for it?"
+    61350                   "Browse missing file"
+    61351                   "Really Hangup?"
+    61352                   "Get previously downloaded files directory"
+    61353                   "Total add %d files."
+    61354                   "Comment"
+    61355                   "Doesn't include valid URL(s)!"
+    61356                   "Select export folder:"
+    61357                   "A newer version(%1) of FlashGet was found.View More Information?"
+    61358                   "You already have the latest version of FlashGet."
+    61359                   "Add Alternate URL"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61360                   "File size is different,can't download from this site."
+    61361                   "No Response"
+    61362                   "Start Ping."
+    61363                   "Ping Done!"
+    61364                   "Start Ftp Search."
+    61365                   "Ftp search done! Total found %d mirror sites."
+    61366                   "Download using FlashGet"
+    61367                   "Download All by FlashGet"
+    61368                   "URL list files(*.lst)|*.lst|All Files (*.*)|*.*||"
+    61369                   "File(s)"
+    61370                   "Byte"
+    61371                   "URL Mask,Username,Password"
+    61372                   "Some file(s) can't move!"
+    61373                   "Please put ""http://"" or ""ftp"" before the address to tell what type of connection to use."
+    61374                   "Name,Type,Title,URL,Size,Modified,From"
+    61375                   "You are using a HTTP Proxy for FTP address. This may not work well (if at all) for browsing an FTP site. If one is available, it is recommended you use an FTP Proxy server.\n61376=This will close FlashGet and all other open FlashGet windows. Continue?"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61376                   "This will close FlashGet and all other open FlashGet windows. Continue?"
+    61377                   "No errors detected."
+    61378                   "It does not appear to be a valid archive."
+    61379                   "CRC Error! Need redownload %1(%2) Bytes, Continue?"
+    61380                   "Downloading again will delete current downloaded file(s),Continue?"
+    61381                   "The file '%1',already exists in your list.\r\n('%2')\r\n Add it as alternate(Mirror) URL?\n"
+    61382                   "Selecting OK will reset and enable all FlashGet integration with your browser for automatic downloading. Sometimes other programs and utilities will interfere with the integration process, even going to the lengths of changing your user settings in order to keep their hold on your system. Some of these programs are installed without your knowledge or consent and are carried as unacknowledged installations delivered with other well-known packages. Often relying on being loaded at system startup and constantly running, they use up unnecessary processor time on your computer all in an attempt to control your machine.\nIf you experience browser integration problems, run this utility to attempt to restore FlashGet's original functionality. If this fails, locate the conflicting installation and remove it completely. If this still doesn't alleviate the problem, Please re-install FlashGet.\nYou need shut down and restart your computer after reinstallation."
+    61383                   "Enable FlashGet Integration With Browser"
+    61384                   "Main Window"
+    61385                   "Hide window when minimized"
+    61386                   "Minimize Main window on clicking X"
+    61387                   "Close FlashGet when done"
+    61388                   "FlashGet will close in %d seconds."
+    61389                   "Confirmations"
+    61390                   "On program exit when have files downloading"
+    61391                   "On program exit when tools windows open"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61392                   "Add URL through menu ""Download using FlashGet"""
+    61393                   "Settings confirm when add batch URLs"
+    61394                   "Speed"
+    61395                   "HangUp"
+    61396                   "ShutDown"
+    61397                   "Exit"
+    61398                   "Site Explorer"
+    61399                   "Default Marked Types"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61440                   "Open"
+    61441                   "Save As"
+    61442                   "All Files (*.*)"
+    61443                   "Untitled"
+    61446                   "an unnamed file"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61457                   "&Hide"
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61472                   "No error message is available."
+    61473                   "An unsupported operation was attempted."
+    61474                   "A required resource was unavailable."
+    61475                   "Out of memory."
+    61476                   "An unknown error has occurred."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61696                   "Invalid filename."
+    61697                   "Failed to open document."
+    61698                   "Failed to save document."
+    61699                   "Save changes to %1?"
+    61700                   "Failed to create empty document."
+    61701                   "The file is too large to open."
+    61702                   "Could not start print job."
+    61703                   "Failed to launch help."
+    61704                   "Internal application error."
+    61705                   "Command failed."
+    61706                   "Insufficient memory to perform operation."
+    61707                   "System registry entries have been removed and the INI file (if any) was deleted."
+    61708                   "Not all of the system registry entries (or INI file) were removed."
+    61709                   "This program requires the file %s, which was not found on this system."
+    61710                   "This program is linked to the missing export %s in the file %s. This machine may have an incompatible version of %s."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61712                   "Please enter an integer."
+    61713                   "Please enter a number."
+    61714                   "Please enter an integer between %1 and %2."
+    61715                   "Please enter a number between %1 and %2."
+    61716                   "Please enter no more than %1 characters."
+    61717                   "Please select a button."
+    61718                   "Please enter an integer between 0 and 255."
+    61719                   "Please enter a positive integer."
+    61720                   "Please enter a date and/or time."
+    61721                   "Please enter a currency."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61728                   "Unexpected file format."
+    61729                   "%1\nCannot find this file.\nPlease verify that the correct path and file name are given."
+    61730                   "Destination disk drive is full."
+    61731                   "Unable to read from %1, it is opened by someone else."
+    61732                   "Unable to write to %1, it is read-only or opened by someone else."
+    61733                   "An unexpected error occurred while reading %1."
+    61734                   "An unexpected error occurred while writing %1."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61836                   "Unable to read write-only property."
+    61837                   "Unable to write read-only property."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61840                   "Unable to load mail system support."
+    61841                   "Mail system DLL is invalid."
+    61842                   "Send Mail failed to send message."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61856                   "No error occurred."
+    61857                   "An unknown error occurred while accessing %1."
+    61858                   "%1 was not found."
+    61859                   "%1 contains an invalid path."
+    61860                   "%1 could not be opened because there are too many open files."
+    61861                   "Access to %1 was denied."
+    61862                   "An invalid file handle was associated with %1."
+    61863                   "%1 could not be removed because it is the current directory."
+    61864                   "%1 could not be created because the directory is full."
+    61865                   "Seek failed on %1"
+    61866                   "A hardware I/O error was reported while accessing %1."
+    61867                   "A sharing violation occurred while accessing %1."
+    61868                   "A locking violation occurred while accessing %1."
+    61869                   "Disk full while accessing %1."
+    61870                   "An attempt was made to access %1 past its end."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61872                   "No error occurred."
+    61873                   "An unknown error occurred while accessing %1."
+    61874                   "An attempt was made to write to the reading %1."
+    61875                   "An attempt was made to access %1 past its end."
+    61876                   "An attempt was made to read from the writing %1."
+    61877                   "%1 has a bad format."
+    61878                   "%1 contained an unexpected object."
+    61879                   "%1 contains an incorrect schema."
+END
+
+STRINGTABLE FIXED IMPURE 
+BEGIN
+    61888                   "pixels"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MyGet.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
